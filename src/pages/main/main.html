@@ -7,25 +7,33 @@
   <title>main</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
-<body class="root">
-    <header class="header">
-        <p class="header__logo">NewsAnalyser</p>
-        <div class="header__container">
-            <a class="header__link">Главная</a>
-            <a class="header__link">О проекте</a>
-        </div>
-    </header>
-    <section class="search">
-        <h1>Что в мире творится</h1>
-        <p>Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-        <form>
-            <div>
-                <input placeholder="Введите тему новости">
+<body>
+    <div class="root">
+        <header class="header">
+            <img class="header__image"src="<%=require('./images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg').default%>">
+            <p class="header__logo">NewsAnalyser</p>
+            <div class="header__container">
+                <div class="header__content-row">
+                    <a class="header__link header__link_type_activated">Главная</a>
+                    <div class="header__stroke"></div>
+                </div>
+                <a class="header__link">О проекте</a>
             </div>
-            <div>
-                <submit>Искать</submit>
+        </header>
+        <section class="search">
+            <div class="search__content-row">
+                <h1 class="search__title">Что в мире творится</h1>
+                <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
             </div>
-        </form>
-    </section>
+            <form class="search__form">
+                <div class="search__input-rectangle">
+                    <input class="search__input" placeholder="Введите тему новости">
+                </div>
+                <div class="search__submit-rectangle">
+                    <submit class="search__submit">Искать</submit>
+                </div>
+            </form>
+        </section>
+    </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
