@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>main</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body class="root">
+    <header class="header">
+        <p class="header__logo">NewsAnalyser</p>
+        <div class="header__container">
+            <a class="header__link">Главная</a>
+            <a class="header__link">О проекте</a>
+        </div>
+    </header>
+    <section class="search">
+        <h1>Что в мире творится</h1>
+        <p>Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+        <form>
+            <div>
+                <input placeholder="Введите тему новости">
+            </div>
+            <div>
+                <submit>Искать</submit>
+            </div>
+        </form>
+    </section>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
