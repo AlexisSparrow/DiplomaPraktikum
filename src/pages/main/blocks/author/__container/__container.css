@@ -1,0 +1,9 @@
+@import url("./__content-row/__content-row.css");
+@import url("./__image/__image.css");
+@import url("./__paragraph/__paragraph.css");
+@import url("./__title/__title.css");
+
+.author__container {
+    display: flex;
+    margin:auto;
+}

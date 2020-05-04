@@ -1,0 +1,11 @@
+@import url("./__icon/__icon.css");
+@import url("./__link-icon/__link-icon.css");
+
+.footer__iconsContainer {
+    position: absolute;
+    right: 106px;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 72px;
+}

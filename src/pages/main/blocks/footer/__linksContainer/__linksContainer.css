@@ -1,0 +1,9 @@
+@import url("./__link/__link.css");
+
+.footer__linksContainer {
+    margin: 0;
+    margin:auto;
+    display:flex;
+    width: 406px;
+    justify-content: space-between;
+}

@@ -22,7 +22,7 @@
         </header>
         <section class="search">
             <div class="search__content-row">
-                <h1 class="search__title">Что в мире творится</h1>
+                <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
             </div>
             <form class="search__form">
@@ -34,6 +34,28 @@
                 </div>
             </form>
         </section>
+        <section class="author">
+            <div class="author__container">
+                <img class="author__image" src="<%=require('./images/alex2.jpg').default%>">
+                <div class="author__content-row">
+                    <h2 class="author__title">Об авторе</h2>
+                    <p class="author__paragraph">Меня зовут Воробьёв Алексей. Я занимаюсь веб-разработкой, владею HTML, CSS, JS, Webpack и GitHub.</p>
+                    <p class="author__paragraph">Я проходил обучение на ЯндексПрактикуме по профессии Front-End, я познал основы программирования и в данный момент продолжаю получать новые знания.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">© 2019  Supersite</p>
+            <div class="footer__linksContainer">
+                <a class="footer__link">Главная</a>
+                <a class="footer__link">О проекте</a>
+                <a class="footer__link">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__iconsContainer">
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/GHV.svg').default%>"></a>
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/FBV.svg').default%>"></a>
+            </div>
+        </footer>
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
