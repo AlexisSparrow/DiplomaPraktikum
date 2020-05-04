@@ -1,0 +1,11 @@
+@import url("./__search-description/__search-description.css");
+@import url("./__search-image/__search-image.css");
+
+.cards__search-container {
+    margin:auto;
+    margin-top:80px; /* Для демонстрации */
+    display:flex;
+    justify-items: center;
+    flex-direction: column;    
+    max-width:340px;
+}

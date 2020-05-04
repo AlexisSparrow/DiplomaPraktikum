@@ -1,0 +1,11 @@
+.cards__title {
+    position: absolute;
+    margin:0;
+    top:80px;
+    left:104px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;    
+}

@@ -1,0 +1,11 @@
+.cards__link {
+    position: absolute;
+    top:94px;
+    right:110px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
