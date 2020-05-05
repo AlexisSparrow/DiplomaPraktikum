@@ -1,0 +1,10 @@
+@import url("./__item/__item.css");
+
+.techs__container {
+    margin-left:178px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-gap: 27px 27px;
+    justify-content: center;
+    padding-top: 13px;
+}

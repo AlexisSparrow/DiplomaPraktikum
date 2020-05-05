@@ -8,5 +8,72 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
 </head>
 <body>
+    <div class="root">
+        <header class="header">
+            <p class="header__logo">NewsAnalyser</p>
+            <div class="header__container">
+                <a class="header__link">Главная</a>
+                <div class="header__content-row">
+                    <a class="header__link header__link_type_activated">О проекте</a>
+                    <div class="header__stroke"></div>
+                </div>
+            </div>
+        </header>
+        <section class="clients">
+            <div class="clients__container">
+                <h2 class="clients__title">Клиентам</h2>
+                <p class="clients__paragraph"> Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+                <p class="clients__paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать. </p>
+                <p class="clients__paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+                <p class="clients__paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+                <p class="clients__paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+            </div>
+        </section>
+        <section class="techs">
+            <div class="techs__content-row">
+                <h2 class="techs__title">Используемые технологии</h2>
+                <div class="techs__container">
+                    <div class="techs__item">
+                        <p class="techs__name">HTML</p>
+                        <img class="techs__image" src="<%=require('./images/html.svg').default%>">
+                    </div>
+                    <div class="techs__item">
+                        <p class="techs__name">CSS</p>
+                        <img class="techs__image" src="<%=require('./images/css.svg').default%>">
+                    </div>
+                    <div class="techs__item">
+                        <p class="techs__name">Java Script</p>
+                        <img class="techs__image" src="<%=require('./images/js.svg').default%>">
+                    </div>
+                    <div class="techs__item">
+                        <p class="techs__name">Webpack</p>
+                        <img class="techs__image" src="<%=require('./images/webpack.svg').default%>">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="author">
+            <div class="author__container">
+                <img class="author__image" src="<%=require('./images/alex2.jpg').default%>">
+                <div class="author__content-row">
+                    <h2 class="author__title">Об авторе</h2>
+                    <p class="author__paragraph">Меня зовут Воробьёв Алексей. Я занимаюсь веб-разработкой, владею HTML, CSS, JS, Webpack и GitHub.</p>
+                    <p class="author__paragraph">Я проходил обучение на ЯндексПрактикуме по профессии Front-End, я познал основы программирования и в данный момент продолжаю получать новые знания.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">© 2019  Supersite</p>
+            <div class="footer__linksContainer">
+                <a class="footer__link">Главная</a>
+                <a class="footer__link">О проекте</a>
+                <a class="footer__link">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__iconsContainer">
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/GHV.svg').default%>"></a>
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/FBV.svg').default%>"></a>
+            </div>
+        </footer>
+    </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>

@@ -1,0 +1,7 @@
+@import url("./__paragraph/__paragraph.css");
+@import url("./__title/__title.css");
+
+.clients__container {
+    margin-left:104px;
+    max-width:815px;
+}

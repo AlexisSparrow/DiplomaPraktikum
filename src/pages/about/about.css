@@ -1,2 +1,12 @@
 @import url("../../vendor/normalize.css");
 @import url("../../vendor/fonts/fonts.css");
+@import url("./blocks/author/author.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/clients/clients.css");
+@import url("./blocks/techs/techs.css");
+
+.root {
+    width:1440px;
+    margin:auto;
+}

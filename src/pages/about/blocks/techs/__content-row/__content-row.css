@@ -1,0 +1,5 @@
+.techs__content-row {
+    display: grid;
+    margin-left: 104px;
+    grid-template-columns: 344px 2fr;
+}
