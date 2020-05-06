@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>about</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>about</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
 </head>
 <body>
     <div class="root">
@@ -62,6 +64,74 @@
                 </div>
             </div>
         </section>
+        <section class="swiper">
+            <div class="swiper__content-row">
+                <h2 class="swiper__title">История коммитов из GitHub</h2>
+                <a class="swiper__link">Открыть в GitHub ></a>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="swiper-date">14 августа, 2019</p>
+                        <div class="swiper-slide-container">
+                            <img class="swiper-image" src="<%=require('./images/face.jpg').default%>">
+                            <div class="swiper-content-row">
+                                <p class="swiper-name">Мария Фёдорова</p>
+                                <p class="swiper-email">mariiifed@yandex.ru</p>  
+                            </div>
+                        </div>
+                        <p class="swiper-paragraph">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <mark class="swiper-mark">Tools > Plugins > Available plugins</mark> and find and install Emmet plugin.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-date">14 августа, 2019</p>
+                        <div class="swiper-slide-container">
+                            <img class="swiper-image" src="<%=require('./images/face.jpg').default%>">
+                            <div class="swiper-content-row">
+                                <p class="swiper-name">Мария Фёдорова</p>
+                                <p class="swiper-email">mariiifed@yandex.ru</p>  
+                            </div>
+                        </div>
+                        <p class="swiper-paragraph">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <mark class="swiper-mark">Tools > Plugins > Available plugins</mark> and find and install Emmet plugin.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-date">14 августа, 2019</p>
+                        <div class="swiper-slide-container">
+                            <img class="swiper-image" src="<%=require('./images/face.jpg').default%>">
+                            <div class="swiper-content-row">
+                                <p class="swiper-name">Мария Фёдорова</p>
+                                <p class="swiper-email">mariiifed@yandex.ru</p>  
+                            </div>
+                        </div>
+                        <p class="swiper-paragraph">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <mark class="swiper-mark">Tools > Plugins > Available plugins</mark> and find and install Emmet plugin.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-date">14 августа, 2019</p>
+                        <div class="swiper-slide-container">
+                            <img class="swiper-image" src="<%=require('./images/face.jpg').default%>">
+                            <div class="swiper-content-row">
+                                <p class="swiper-name">Мария Фёдорова</p>
+                                <p class="swiper-email">mariiifed@yandex.ru</p>  
+                            </div>
+                        </div>
+                        <p class="swiper-paragraph">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <mark class="swiper-mark">Tools > Plugins > Available plugins</mark> and find and install Emmet plugin.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-date">14 августа, 2019</p>
+                        <div class="swiper-slide-container">
+                            <img class="swiper-image" src="<%=require('./images/face.jpg').default%>">
+                            <div class="swiper-content-row">
+                                <p class="swiper-name">Мария Фёдорова</p>
+                                <p class="swiper-email">mariiifed@yandex.ru</p>  
+                            </div>
+                        </div>
+                        <p class="swiper-paragraph">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <mark class="swiper-mark">Tools > Plugins > Available plugins</mark> and find and install Emmet plugin.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
         <footer class="footer">
             <p class="footer__copyright">© 2019  Supersite</p>
             <div class="footer__linksContainer">
@@ -75,5 +145,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>

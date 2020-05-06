@@ -1,0 +1,13 @@
+@import url("./-wrapper/-wrapper.css");
+@import url("./-button-next/-button-next.css");
+@import url("./-button-prev/-button-prev.css");
+@import url("./-pagination/-pagination.css");
+
+
+.swiper-container {
+    width: 400px;
+    height: 288px;
+    margin-top:64px;
+    overflow: visible;
+    position: initial;
+}

@@ -5,6 +5,7 @@
 @import url("./blocks/header/header.css");
 @import url("./blocks/clients/clients.css");
 @import url("./blocks/techs/techs.css");
+@import url("./blocks/swiper/swiper.css");
 
 .root {
     width:1440px;
