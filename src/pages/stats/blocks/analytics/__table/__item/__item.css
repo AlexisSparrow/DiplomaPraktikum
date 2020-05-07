@@ -1,0 +1,10 @@
+@import url("./__graph/__graph.css");
+@import url("./__item-date/__item-date.css");
+
+.analytics__item:nth-of-type(n+1) {
+    margin-top: 56px;
+}
+
+.analytics__item {
+    display:flex
+}

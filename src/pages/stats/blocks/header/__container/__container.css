@@ -1,0 +1,11 @@
+@import url("./__link/__link.css");
+@import url("./__link/_type_activated/_type_activated.css");
+@import url("./__content-row/__content-row.css");
+@import url("./__stroke/__stroke.css");
+
+.header__container {
+    position: absolute;
+    top:30px;
+    right:101px;
+    display: flex;
+}

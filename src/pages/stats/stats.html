@@ -8,5 +8,98 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.stats.css %>">
 </head>
 <body>
+    <div class="root">
+        <header class="header">
+            <p class="header__logo">NewsAnalyser</p>
+            <div class="header__container">
+                <a class="header__link">Главная</a>
+                <a class="header__link">О проекте</a>
+            </div>
+        </header>
+        <section class="request">
+            <p class="request__path">Главная <span class="request__span-path">/ Аналитика</span></p>
+            <h1 class="request__question">Вы спросили: «Путешествия»</h1>
+            <p class="request__news">Новостей за неделю: <span class="request__span-news">34 324</span></p>
+            <p class="request__news">Упоминаний в загаловках: <span class="request__span-news">235</span></p>
+        </section>
+        <section class="analytics">
+            <h2 class="analytics__title">Аналитика по дням</h2>
+            <div class="analytics__table">
+                <div class="analytics__content-row">
+                    <p class="analytics__date">ДАТА (АВГУСТ)</p>
+                    <p class="analytics__info">КОЛ-ВО УПОМИНАНИЙ</p>
+                </div>
+                <div class="analytics__vector"></div>
+                <div class="analytics__number-line">
+                    <p class="analytics__number">0</p>
+                    <p class="analytics__number">25</p>
+                    <p class="analytics__number">50</p>
+                    <p class="analytics__number">75</p>
+                    <p class="analytics__number">10</p>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__item">
+                    <p class="analytics__item-date">16,пн</p>
+                    <div class="analytics__graph">
+                        <p class="analytics__graph-number">15</p>
+                    </div>
+                </div>
+                <div class="analytics__number-line">
+                    <p class="analytics__number">0</p>
+                    <p class="analytics__number">25</p>
+                    <p class="analytics__number">50</p>
+                    <p class="analytics__number">75</p>
+                    <p class="analytics__number">10</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">© 2019  Supersite</p>
+            <div class="footer__linksContainer">
+                <a class="footer__link">Главная</a>
+                <a class="footer__link">О проекте</a>
+                <a class="footer__link">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__iconsContainer">
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/GHV.svg').default%>"></a>
+                <a class="footer__link-icon"><img class="footer__icon" src="<%=require('./images/FBV.svg').default%>"></a>
+            </div>
+        </footer>
+    </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.stats.entry %>"></script>
 </body>

@@ -1,0 +1,9 @@
+@import url("./__graph-number/__graph-number.css");
+
+.analytics__graph {
+    background: #2F71E5;
+    width:calc(15*12*100%/1440); /* уравнение для js */
+    height:24px;
+    margin-left:calc(50*100%/1440);
+    display: flex;
+}

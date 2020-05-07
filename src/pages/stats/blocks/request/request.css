@@ -1,0 +1,9 @@
+@import url("./__news/__news.css");
+@import url("./__path/__path.css");
+@import url("./__question/__question.css");
+
+.request {
+    padding-top: 40px;
+    padding-left: 104px;
+    padding-bottom: 80px;
+}

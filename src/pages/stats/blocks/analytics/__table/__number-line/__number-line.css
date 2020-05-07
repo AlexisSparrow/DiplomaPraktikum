@@ -1,0 +1,9 @@
+@import url("./__number/__number.css");
+
+.analytics__number-line {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin-top:16px;
+    margin-bottom:16px;
+}

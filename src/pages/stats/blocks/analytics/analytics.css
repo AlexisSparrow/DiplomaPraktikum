@@ -1,0 +1,10 @@
+@import url("./__table/__table.css");
+@import url("./__title/__title.css");
+
+.analytics {
+    background-color: #F5F6F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 104px;
+    padding-right: 104px;
+}

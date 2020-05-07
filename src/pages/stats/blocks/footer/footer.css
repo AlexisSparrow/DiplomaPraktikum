@@ -1,0 +1,10 @@
+@import url("./__copyright/__copyright.css");
+@import url("./__iconsContainer/__iconsContainer.css");
+@import url("./__linksContainer/__linksContainer.css");
+
+.footer {
+    display: flex;
+    position: relative;
+    width: inherit;
+    height: 80px;
+}
