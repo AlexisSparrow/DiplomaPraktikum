@@ -10,3 +10,7 @@
 .header__link:nth-of-type(1) {
     margin-right: 34px;
 }
+
+.header__link:hover {
+    color: #FFFFFF;
+}

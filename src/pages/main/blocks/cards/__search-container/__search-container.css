@@ -1,5 +1,5 @@
 @import url("./__search-description/__search-description.css");
-@import url("./__search-image/__search-image.css");
+@import url("./__search-preloader/__search-preloader.css");
 
 .cards__search-container {
     margin:auto;

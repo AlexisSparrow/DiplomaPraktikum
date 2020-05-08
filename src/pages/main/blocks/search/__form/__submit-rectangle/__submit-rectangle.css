@@ -10,3 +10,11 @@
     display: flex;
     
 }
+
+.search__submit-rectangle:hover {
+    background: #347EFF;
+}
+
+.search__submit-rectangle:active {
+    background: #347EFF;
+}
