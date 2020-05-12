@@ -8,3 +8,16 @@
     display: flex;
 
 }
+
+@media screen and (max-width: 768px) {
+    .search__input-rectangle {
+        width:448px;
+        height:56px
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .search__input-rectangle {
+        width: 288px;
+    }  
+}

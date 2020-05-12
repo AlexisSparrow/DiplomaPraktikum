@@ -4,6 +4,14 @@
 @import url("./__title/__title.css");
 
 .author__container {
-    display: flex;
-    margin:auto;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-auto-flow: column;
+}
+
+@media screen and (max-width: 768px) {
+    .author__container {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -12,3 +12,10 @@
     padding-top:80px;
     padding-bottom:80px;
 }
+
+@media screen and (max-width: 764px) {
+    .cards{
+        padding-top:30px;
+
+    }
+}

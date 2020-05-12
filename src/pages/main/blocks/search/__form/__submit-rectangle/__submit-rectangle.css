@@ -18,3 +18,18 @@
 .search__submit-rectangle:active {
     background: #347EFF;
 }
+
+@media screen and (max-width: 768px) {
+    .search__submit-rectangle {
+        width:160px;
+        height:56px
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .search__submit-rectangle {
+        width: 288px;
+        position: relative;
+        top:16px
+    }  
+}

@@ -1,6 +1,19 @@
 .cards__content-row {
-    height: 260px;
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom: 24px;
+    width:90%;
+    position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+    .cards__content-row{
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards__content-row{
+        margin-bottom: 14px;
+    }
 }

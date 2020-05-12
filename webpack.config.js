@@ -92,6 +92,12 @@ module.exports = {
             filename: 'stats.html',
         }),
         new WebpackMd5Hash()
-    ]
+    ],
+
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 8087
+      }
 };
 

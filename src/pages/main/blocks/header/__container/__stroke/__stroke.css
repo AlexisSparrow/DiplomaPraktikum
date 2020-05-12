@@ -4,3 +4,15 @@
     margin-top: 23px;
     background: #FFFFFF
 }
+
+@media screen and (max-width: 768px) {
+    .header__stroke {
+        margin-top:18px
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .header__stroke {
+        margin-top:14px;
+    }  
+}

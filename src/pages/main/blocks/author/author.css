@@ -3,5 +3,21 @@
 .author {
     padding-top:80px;
     padding-bottom: 80px;
-    display:flex;
+    padding-left:104px;
+    padding-right: 216px;
+
+}
+
+@media screen and (max-width: 1440px) {
+    .author{
+        padding-left:calc(104*100vw/1440);
+        padding-right:calc(216*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author{
+        padding-left:calc(104*100vw/1440);
+        padding-right:calc(104*100vw/1440);
+    }
 }

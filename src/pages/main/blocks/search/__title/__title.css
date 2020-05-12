@@ -8,3 +8,17 @@
     color: #FFFFFF;
     margin:0
 }
+
+@media screen and (max-width: 768px) {
+    .search__title {
+        width: 300px;
+        font-size: 36px;
+        line-height: 40px;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .search__title {
+        width: 285px;
+    }  
+}

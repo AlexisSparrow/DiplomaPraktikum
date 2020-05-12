@@ -7,8 +7,12 @@
     letter-spacing: 0.4px;
     text-transform: uppercase; 
     color: #B6BCBF;
-    position: absolute;
     margin:0;
-    left:0;
-    bottom:0;
+    margin-top:10px;
+}
+
+@media screen and (max-width: 500px) {
+    .cards__item-source{
+        margin-top: 5px;
+    }
 }
