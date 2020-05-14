@@ -21,3 +21,10 @@
         padding-right:calc(104*100vw/1440);
     }
 }
+
+@media screen and (max-width: 425px) {
+    .author{
+        padding-left:16px;
+        padding-right:18px;
+    }
+}

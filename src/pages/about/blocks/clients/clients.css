@@ -3,4 +3,31 @@
 .clients {
     padding-top:80px;
     padding-bottom:94px;
+    padding-right:40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .clients {
+        padding-top: calc(80*100vw/1440);
+        padding-bottom: calc(94*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .clients {
+        padding-bottom:55px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .clients {
+        padding-top:25px; ;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clients {
+        padding-bottom:30px;
+        padding-right:calc(40*100vw/768);   
+    }
 }

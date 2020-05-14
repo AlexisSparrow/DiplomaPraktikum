@@ -10,3 +10,28 @@
     line-height: 22px;
     color: #B6BCBF;
 }
+
+@media screen and (max-width: 1440px) {
+    .footer__copyright {
+        left:calc(106*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .footer__copyright {
+        left:40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__copyright {
+        top:21px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__copyright {
+        position: initial;
+        margin-top: 40px;
+    }
+}

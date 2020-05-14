@@ -5,3 +5,21 @@
     margin-left:104px;
     max-width:815px;
 }
+
+@media screen and (max-width: 1440px) {
+    .clients__container{
+        margin-left:calc(104*100vw/1440);   
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .clients__container{
+        margin-left:40px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clients__container{
+        margin-left:calc(40*100vw/768);   
+    }
+}

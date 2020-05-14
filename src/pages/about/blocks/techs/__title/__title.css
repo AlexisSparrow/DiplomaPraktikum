@@ -3,7 +3,13 @@
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 46px; 
+    line-height: 1.12; 
     color: #1A1B22;   
     width: 344px;
+}
+
+@media screen and (max-width: 645px) {
+    .techs__title{
+        font-size: 30px;
+    }  
 }

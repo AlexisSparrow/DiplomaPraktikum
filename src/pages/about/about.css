@@ -6,10 +6,12 @@
 @import url("./blocks/clients/clients.css");
 @import url("./blocks/techs/techs.css");
 @import url("./blocks/swiper/swiper.css");
+@import url("./blocks/header/_type_light/_type_light.css");
 
 .root {
-    width:1440px;
+    max-width:1440px;
     margin:auto;
+    overflow: hidden;
 }
 
 a {
