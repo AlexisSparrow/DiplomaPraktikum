@@ -3,6 +3,7 @@
 @import url("./__content-row/__content-row.css");
 @import url("./__stroke/__stroke.css");
 @import url("./__stroke/_type_light/_type_light.css");
+@import url("./__list-link/__list-link.css");
 
 .header__container {
     position: absolute;
@@ -11,6 +12,8 @@
     display: flex;
     width:190px;
     justify-content: space-between;
+    padding:0;
+    margin:0;
 }
 
 @media screen and (max-width: 1024px) {

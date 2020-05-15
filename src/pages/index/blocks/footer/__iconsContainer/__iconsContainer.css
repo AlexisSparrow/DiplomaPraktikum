@@ -1,5 +1,6 @@
 @import url("./__icon/__icon.css");
 @import url("./__link-icon/__link-icon.css");
+@import url("./__icon-list/__icon-list.css");
 
 .footer__iconsContainer {
     position: absolute;
@@ -8,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     width: 72px;
+    padding: 0;
+    margin:0;
 }
 
 @media screen and (max-width: 1440px) {

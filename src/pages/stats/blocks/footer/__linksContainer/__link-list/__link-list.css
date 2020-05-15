@@ -1,0 +1,30 @@
+.footer__link-list {
+    list-style: none;
+}
+
+.footer__link-list:nth-of-type(n+2) {
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 1440px){
+    .footer__link-list:nth-of-type(n+2) {
+        margin-left: calc(40*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer__link-list:nth-of-type(n+2) {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__link-list {
+        margin:0;
+    }
+
+    .footer__link-list:nth-of-type(n+2) {
+        margin-top: 30px;
+        margin-left:0px;
+    }
+}
