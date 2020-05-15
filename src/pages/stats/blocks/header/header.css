@@ -1,7 +1,7 @@
 
 @import url("./__container/__container.css");
 @import url("./__logo/__logo.css");
-@import url("./__logo/_type_light/_type_light.css");
+@import url("./_type_light/_type_light.css");
 
 .header {
     position: relative;
