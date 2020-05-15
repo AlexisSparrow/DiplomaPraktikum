@@ -1,11 +1,40 @@
 @import url("./__link/__link.css");
-@import url("./__link/_type_activated/_type_activated.css");
+@import url("./__link/_type_activated-light/_type-activated-light.css");
 @import url("./__content-row/__content-row.css");
 @import url("./__stroke/__stroke.css");
+@import url("./__stroke/_type_light/_type_light.css");
 
 .header__container {
     position: absolute;
     top:30px;
-    right:101px;
+    right:calc(101*100%/1440);
     display: flex;
+    width:190px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header__container {
+        right:calc(42*100%/1024);
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .header__container {
+        width:150px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        top:20px
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .header__container {
+        top:16px;
+    }  
 }

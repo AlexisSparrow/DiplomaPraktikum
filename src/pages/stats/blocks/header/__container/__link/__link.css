@@ -7,10 +7,12 @@
     color: #B6BCBF;  
 }
 
-.header__link:nth-of-type(1) {
-    margin-right: 34px;
+.header__link:hover {
+    color: #FFFFFF;
 }
 
-.header__link:hover {
-    color: #1A1B22;
+@media screen and (max-width: 500px) {
+    .header__link {
+        font-size: 16px;
+    }  
 }

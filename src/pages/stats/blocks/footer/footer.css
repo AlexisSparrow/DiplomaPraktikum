@@ -8,3 +8,27 @@
     width: inherit;
     height: 80px;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        height:64px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        height: fit-content;
+        display: block;
+        padding-top:20px;
+        padding-bottom: 22px;
+        padding-left:calc(104*100vw/1440);
+        padding-right:calc(104*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        padding-left:16px;
+        padding-right:22px;
+    }
+}

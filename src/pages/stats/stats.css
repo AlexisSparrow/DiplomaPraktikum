@@ -6,7 +6,7 @@
 @import url("./blocks/analytics/analytics.css");
 
 .root {
-    width:1440px;
+    max-width:1440px;
     margin:auto;
 }
 

@@ -4,6 +4,26 @@
 
 .request {
     padding-top: 40px;
-    padding-left: 104px;
+    padding-left:calc(104*100%/1440);
     padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .request {
+        padding-top:32px;
+        padding-left: calc(40*100%/1024);
+        padding-bottom: calc(80*100%/1024);
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .request {
+        padding-bottom: 40px;
+    }  
+}
+
+@media screen and (max-width: 425px) {
+    .request {
+        padding-top: 16px;
+    }  
 }

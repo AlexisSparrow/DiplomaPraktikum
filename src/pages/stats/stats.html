@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="root">
-        <header class="header">
-            <p class="header__logo">NewsAnalyser</p>
+        <header class="header header_type_light">
+            <p class="header__logo header__logo_type_light">NewsAnalyser</p>
             <div class="header__container">
                 <a class="header__link" href="http://localhost:8087/main.html">Главная</a>
                 <a class="header__link" href="http://localhost:8087/about.html">О проекте</a>
@@ -36,48 +36,50 @@
                     <p class="analytics__number">25</p>
                     <p class="analytics__number">50</p>
                     <p class="analytics__number">75</p>
-                    <p class="analytics__number">10</p>
+                    <p class="analytics__number">100</p>
                 </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                <div class="analytics__item-container">
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
-                </div>
-                <div class="analytics__item">
-                    <p class="analytics__item-date">16,пн</p>
-                    <div class="analytics__graph">
-                        <p class="analytics__graph-number">15</p>
+                    <div class="analytics__item">
+                        <p class="analytics__item-date">16,пн</p>
+                        <div class="analytics__graph">
+                            <p class="analytics__graph-number">15</p>
+                        </div>
                     </div>
                 </div>
                 <div class="analytics__number-line">
@@ -90,7 +92,6 @@
             </div>
         </section>
         <footer class="footer">
-            <p class="footer__copyright">© 2019  Supersite</p>
             <div class="footer__linksContainer">
                 <a class="footer__link" href="http://localhost:8087/main.html">Главная</a>
                 <a class="footer__link" href="http://localhost:8087/about.html">О проекте</a>
@@ -100,6 +101,7 @@
                 <a class="footer__link-icon" href="https://github.com/AlexisSparrow"><img class="footer__icon" src="<%=require('./images/GHV.svg').default%>" alt="Problem with connection or file"></a>
                 <a class="footer__link-icon" href="#"><img class="footer__icon" src="<%=require('./images/FBV.svg').default%>" alt="Problem with connection or file"></a>
             </div>
+            <p class="footer__copyright">© 2019  Supersite</p>
         </footer>
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.stats.entry %>"></script>

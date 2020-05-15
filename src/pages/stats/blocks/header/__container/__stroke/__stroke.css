@@ -1,6 +1,19 @@
 .header__stroke {
-    width: 92px;
+    width: 68px;
     height:3px;
     margin-top: 23px;
-    background-color: #1A1B22;
+    background: #FFFFFF
+}
+
+@media screen and (max-width: 768px) {
+    .header__stroke {
+        margin-top:18px
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .header__stroke {
+        margin-top:14px;
+        width:60px;
+    }  
 }
