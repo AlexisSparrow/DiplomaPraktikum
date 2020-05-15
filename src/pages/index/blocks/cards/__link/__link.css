@@ -21,7 +21,8 @@
     .cards__link{
         position: initial;
         display: block;
-        width:fit-content;
+        white-space: nowrap;
+        width:max-content;
         margin:auto;
         margin-top:16px;
     }
@@ -31,7 +32,8 @@
     .cards__link {
         position: initial;
         display: block;
-        width:fit-content;
+        width:max-content;
+        white-space: nowrap;
         margin-left:12px;
         margin-top:16px;
     }
