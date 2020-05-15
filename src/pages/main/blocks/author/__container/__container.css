@@ -9,7 +9,7 @@
     grid-auto-flow: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .author__container {
         display: flex;
         flex-direction: column;

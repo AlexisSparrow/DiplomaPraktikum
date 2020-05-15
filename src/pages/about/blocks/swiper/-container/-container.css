@@ -11,3 +11,37 @@
     overflow: visible;
     position: initial;
 }
+
+@media screen and (max-width: 1023px) {
+    .swiper-container {
+        width:772px;
+        height:242px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        width:336px;
+        height:242px;
+        margin:0;
+        margin-top:64px;
+        margin-left:40px;
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-container {
+        width:450px;
+        height:264px;
+        margin:auto;
+        margin-top:64px;
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .swiper-container {
+        width:90%
+    }
+}

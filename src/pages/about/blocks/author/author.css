@@ -17,8 +17,15 @@
 
 @media screen and (max-width: 1024px) {
     .author{
-        padding-left:calc(104*100vw/1440);
-        padding-right:calc(104*100vw/1440);
+        padding-left:calc(104*100vw/1540);
+        padding-right:calc(104*100vw/1540);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author{
+        padding-left:40px;
+        padding-right:40px;
     }
 }
 
