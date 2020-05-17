@@ -1,0 +1,5 @@
+class CommitCard {
+    constructor() {
+        
+    }
+}

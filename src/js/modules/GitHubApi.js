@@ -1,0 +1,9 @@
+class GitHubApi {
+    constructor() {
+
+    }
+    
+    getCommits() {
+
+    }
+}

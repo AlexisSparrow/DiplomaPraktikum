@@ -14,10 +14,10 @@
             <div class="header__image-background"><img class="header__image" src="<%=require('./images/georgia-de-lotz-UsJoNxLaNo-unsplash.jpg').default%>" alt="Problem with connection or file"></div>
             <p class="header__logo">NewsAnalyser</p>
             <ul class="header__container">
-                <div class="header__content-row">
-                    <li class="header__list-link"><a class="header__link header__link_type_activated" href="https://alexissparrow.github.io/DiplomaPraktikum/index.html">Главная</a></li>
+                <li class="header__content-row">
+                    <a class="header__link header__link_type_activated" href="https://alexissparrow.github.io/DiplomaPraktikum/index.html">Главная</a>
                     <div class="header__stroke"></div>
-                </div>
+                </li>
                 <li class="header__list-link"><a class="header__link" href="https://alexissparrow.github.io/DiplomaPraktikum/about.html">О проекте</a></li>
             </ul>
         </header>
@@ -28,9 +28,9 @@
             </div>
             <form class="search__form">
                 <div class="search__input-rectangle">
-                    <input class="search__input" placeholder="Введите тему новости">
+                    <input type="text" class="search__input" placeholder="Введите тему новости">
                 </div>
-                <button class="search__submit" type="submit">Искать</button>
+                <button type="submit" class="search__submit">Искать</button>
             </form>
         </section>
         <section class="cards">
