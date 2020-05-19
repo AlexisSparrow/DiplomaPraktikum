@@ -1,0 +1,20 @@
+@import url("../../vendor/normalize.css");
+@import url("../../vendor/fonts/fonts.css");
+@import url("./blocks/author/author.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/clients/clients.css");
+@import url("./blocks/techs/techs.css");
+@import url("./blocks/swiper/swiper.css");
+@import url("./blocks/header/_type_light/_type_light.css");
+
+.root {
+    max-width:1440px;
+    margin:auto;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;  
+}

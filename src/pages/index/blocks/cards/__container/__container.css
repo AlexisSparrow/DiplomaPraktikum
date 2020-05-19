@@ -1,0 +1,45 @@
+@import url("./__item/__item.css");
+
+.cards__container {
+    padding-left:5%;
+    padding-right:5%;
+    max-width:1240px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 16px 16px;
+    justify-content: center;
+    margin: auto;
+    margin-top:110px;
+    position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+    .cards__container{
+        grid-template-columns: repeat(auto-fill, calc(400*110%/1440))
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cards__container{
+        margin-top:30px
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .cards__container{
+        grid-template-columns: repeat(auto-fill, 224px)
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .cards__container{
+        grid-gap:8px;
+    }
+}
+
+
+@media screen and (max-width: 518px) {
+    .cards__container{
+        grid-template-columns: repeat(auto-fill, 288px)
+    }
+}

@@ -1,0 +1,31 @@
+@import url("../../vendor/normalize.css");
+@import url("../../vendor/fonts/fonts.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/search/search.css");
+@import url("./blocks/author/author.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/cards/cards.css");
+
+
+
+.root {
+    max-width:1440px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;  
+}
+
+ol {
+    padding:0;
+    list-style: none;
+    margin:0;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin:0;
+}

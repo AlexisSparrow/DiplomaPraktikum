@@ -1,0 +1,25 @@
+.techs__content-row {
+    display: grid;
+    margin-left: 104px;
+    grid-template-columns: 344px 2fr;
+}
+
+@media screen and (max-width: 1340px) {
+    .techs__content-row {
+        display: block;
+        margin-left: calc(104*100vw/1440);
+    }  
+}
+
+@media screen and (max-width: 950px) {
+    .techs__content-row {
+        margin-left: 40px;
+    }  
+}
+
+@media screen and (max-width: 645px) {
+    .techs__content-row {
+        max-width:270px;
+        margin:auto;
+    }  
+}

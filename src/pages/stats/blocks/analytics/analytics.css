@@ -1,0 +1,26 @@
+@import url("./__table/__table.css");
+@import url("./__title/__title.css");
+
+.analytics {
+    background-color: #F5F6F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: calc(104*100%/1440);
+    padding-right: calc(104*100%/1440);
+}
+
+@media screen and (max-width: 1024px) {
+    .analytics {
+        padding-left: calc(40*100%/1024);
+        padding-right: calc(40*100%/1024);
+        padding-top: calc(80*100%/1440);
+        padding-bottom: calc(80*100%/1440);
+    }  
+}
+
+@media screen and (max-width: 690px) {
+    .analytics {
+        padding-bottom: 38px;
+        padding-top:25px;
+    }  
+}

@@ -1,0 +1,17 @@
+@import url("./__content-row/__content-row.css");
+@import url("./__image/__image.css");
+@import url("./__paragraph/__paragraph.css");
+@import url("./__title/__title.css");
+
+.author__container {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-auto-flow: column;
+}
+
+@media screen and (max-width: 767px) {
+    .author__container {
+        display: flex;
+        flex-direction: column;
+    }
+}

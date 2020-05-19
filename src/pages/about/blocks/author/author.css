@@ -1,0 +1,37 @@
+@import url("./__container/__container.css");
+
+.author {
+    padding-top:80px;
+    padding-bottom: 80px;
+    padding-left:104px;
+    padding-right: 216px;
+
+}
+
+@media screen and (max-width: 1440px) {
+    .author{
+        padding-left:calc(104*100vw/1440);
+        padding-right:calc(216*100vw/1440);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author{
+        padding-left:calc(104*100vw/1540);
+        padding-right:calc(104*100vw/1540);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author{
+        padding-left:40px;
+        padding-right:40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .author{
+        padding-left:16px;
+        padding-right:18px;
+    }
+}
