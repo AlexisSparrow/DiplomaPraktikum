@@ -10,7 +10,7 @@
     height: 110px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: inline-block;
+    display: block;
 }
 
 @media screen and (max-width: 1440px) {

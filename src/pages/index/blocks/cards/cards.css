@@ -5,6 +5,7 @@
 @import url("./__error-container/__error-container.css");
 @import url("./__search-container/__search-container.css");
 @import url("./__vector/__vector.css");
+@import url("./__root/__root.css");
 
 
 .cards {
@@ -12,11 +13,12 @@
     position: relative;
     padding-top:80px;
     padding-bottom:80px;
+    display: none;
 }
 
 @media screen and (max-width: 764px) {
     .cards{
-        padding-top:30px;
-
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 }

@@ -4,8 +4,7 @@
 
 .cards__error-container {
     margin:auto;
-    margin-top:80px; /* Для демонстрации */
-    display:flex;
+    display:none;
     justify-items: center;
     flex-direction: column;
     max-width:340px;
