@@ -5,7 +5,7 @@ export default class NewsApi {
 
     getNews(keyWord) {
         console.log(keyWord);
-        return fetch(`${this.options.baseUrl}q=${keyWord}&${this.options.expandedUrl}`)
+        return fetch(`${this.options.baseUrl}q=${keyWord}&from=${this.options.date}&${this.options.expandedUrl}`)
         .then(res => {
             if (!res.ok) {
                 return Promise.reject(res.status)

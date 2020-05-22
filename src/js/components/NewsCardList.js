@@ -1,7 +1,7 @@
 import NewsCard from './NewsCard';
 
 export default class NewsCardList {
-    constructor(container, root, search, error,) {
+    constructor(container, root, search, error) {
         this.container = container;
         this.root = root;
         this.search = search;
@@ -16,10 +16,9 @@ export default class NewsCardList {
 
     addListCard(list) {
         this.container.innerHTML = "";
-        console.log(this.error);
-        if (list.length > 0) {
-            for (const element of list) {
-                const data = element;
+        const listSliced = list.slice(0, 3);
+        if (listSliced.length > 0) {
+            for (const data of listSliced) {
                 this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name);
             };
             this.error.style.display = "none";

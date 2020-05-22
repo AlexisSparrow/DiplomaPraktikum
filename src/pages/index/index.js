@@ -6,11 +6,11 @@ import NewsCardList from '../../js/components/NewsCardList';
 
 const newsApi = new NewsApi({
     baseUrl: 
-        'http://newsapi.org/v2/everything?',
+        'https://newsapi.org/v2/everything?',
     expandedUrl:
-        'from=2020-05-17&' +
         'sortBy=popularity&' +
         'apiKey=0d53a45fdb354aacb0b658c5523deca1',
+    date: new Date(new Date() - 604800000).toISOString()
     }, 
 
 );
