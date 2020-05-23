@@ -1,4 +1,4 @@
-const opt = {
+const swiperOptions = {
     direction: 'horizontal',
     loop: false,
 
@@ -43,4 +43,4 @@ const opt = {
 
 }
 
-export {opt};
+export {swiperOptions};

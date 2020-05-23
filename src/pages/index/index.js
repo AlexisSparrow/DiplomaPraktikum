@@ -9,7 +9,7 @@ const newsApi = new NewsApi({
         'https://newsapi.org/v2/everything?',
     expandedUrl:
         'sortBy=popularity&' +
-        'apiKey=0d53a45fdb354aacb0b658c5523deca1',
+        'apiKey=669b729be5ea4536b3fb7ba2b460e0d9',
     date: new Date(new Date() - 604800000).toISOString()
     }, 
 

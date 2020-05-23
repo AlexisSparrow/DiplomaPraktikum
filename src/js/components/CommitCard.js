@@ -1,3 +1,4 @@
+import DateChanger from '../../js/utils/DateChanger';
 export default class CommitCard {
     constructor(date, imageUrl, name, email, text) {
         this.date = date;
@@ -11,8 +12,14 @@ export default class CommitCard {
         const commitCard = document.createElement('div');
         commitCard.classList.add('swiper-slide');
 
+        const dateChanger = new DateChanger(this.date);
+
+        const dateObj = dateChanger.dateFormation();
+
+        const dateFormated = dateObj.dayFormated + ' ' + dateObj.monthFormated + ', ' + dateObj.yearFormated;
+
         const template = 
-            `<p class="swiper-date">${this.date}</p>
+            `<p class="swiper-date">${dateFormated}</p>
             <div class="swiper-slide-container">
                 <img class="swiper-image" src="${this.imageUrl}" alt="Problem with connection or file">
                 <div class="swiper-content-row">
@@ -26,6 +33,6 @@ export default class CommitCard {
 
         console.log(commitCard);
 
-        return commitCard
+        return commitCard;
     }
 }
