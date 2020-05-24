@@ -29,7 +29,7 @@ export default class CommitCard {
             </div>
             <p class="swiper-paragraph">${this.text}`;
 
-        commitCard.innerHTML = template;
+        commitCard.insertAdjacentHTML('afterBegin', template);
 
         console.log(commitCard);
 
