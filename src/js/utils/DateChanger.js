@@ -6,40 +6,76 @@ export default class DateChanger {
     monthChecker(month) {
         switch(month) {
             case '01':
-                return('января');
+                return { 
+                    firstType:'января',
+                    secondType:'январь'
+                }
                 break;
             case '02':
-                return('февраля');
+                return { 
+                    firstType:'февраля',
+                    secondType:'февраль'
+                }
                 break;
             case '03':
-                return('марта');
+                return { 
+                    firstType:'марта',
+                    secondType:'март'
+                }
                 break;
             case '04':
-                return('апреля');
+                return { 
+                    firstType:'апреля',
+                    secondType:'апрель'
+                }
                 break;
             case '05':
-                return('мая');
+                return { 
+                    firstType:'мая',
+                    secondType:'май'
+                }
                 break;
             case '06':
-                return('июня');
+                return { 
+                    firstType:'июня',
+                    secondType:'июнь'
+                }
                 break;
             case '07':
-                return('июля');
+                return { 
+                    firstType:'июля',
+                    secondType:'июль'
+                }
                 break;
             case '08':
-                return('августа');
+                return { 
+                    firstType:'августа',
+                    secondType:'август'
+                }
                 break;
             case '09':
-                return('сентября');
+                return { 
+                    firstType:'сентября',
+                    secondType:'сентябрь'
+                }
                 break;
             case '10':
-                return('октября');
+                return { 
+                    firstType:'октября',
+                    secondType:'октябрь'
+                }
                 break;
             case '11':
-                return('ноября');
+                return { 
+                    firstType:'ноября',
+                    secondType:'ноябрь'
+                }
                 break;
             case '12':
-                return('декабря');
+                return { 
+                    firstType:'декабря',
+                    secondType:'декабрь'
+                }
                 break;
             default:
                 console.log('переменная месяца невалидна')

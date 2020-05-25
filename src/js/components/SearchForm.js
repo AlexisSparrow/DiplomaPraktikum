@@ -6,16 +6,16 @@ export default class SearchForm {
         this.root = root;
         this.search = search;
         this.section = section;
-        this.error = error
-        console.log(this.form)
+        this.error = error;
         this.form
             .querySelector('.search__submit')
-            .addEventListener('click', this.callApi.bind(this))
+            .addEventListener('click', this.callApi.bind(this));
     }
     
     callApi() {
         event.preventDefault();
         const word = this.form.querySelector('.search__input').value;
+        this.form.querySelector('.search__input').value = '';
         this.error.style.display = "none";
         this.root.style.display = "none";
         this.section.style.display = "block";
@@ -24,6 +24,7 @@ export default class SearchForm {
             .then(res => 
                 {
                     dataStorage.vanishOldData();
+                    dataStorage.uploadKeyWord(word)
                     dataStorage.uploadData(res.articles);
                     newsCardList.addListCard(JSON.parse(localStorage.newsArray));
                 })

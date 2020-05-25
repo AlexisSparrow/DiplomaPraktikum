@@ -16,7 +16,11 @@ export default class CommitCard {
 
         const dateObj = dateChanger.dateFormation();
 
-        const dateFormated = dateObj.dayFormated + ' ' + dateObj.monthFormated + ', ' + dateObj.yearFormated;
+        const dateFormated = dateObj.dayFormated + ' ' + dateObj.monthFormated.firstType + ', ' + dateObj.yearFormated;
+
+        if (this.imageUrl.onerror()) {
+            this.imageUrl = `<%=require('./images/kasna.jpg').default%>`
+        }
 
         const template = 
             `<p class="swiper-date">${dateFormated}</p>
