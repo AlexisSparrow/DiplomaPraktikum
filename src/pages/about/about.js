@@ -15,7 +15,8 @@ gitHubApi.getCommits()
     .then(res=> {
         commitCardList.addListCard(res);
         var mySwiper = new Swiper ('.swiper-container' , swiperOptions)
-    });
+    })
+    .catch(err => console.log(err))
 
 
 

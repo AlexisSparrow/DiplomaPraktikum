@@ -8,8 +8,7 @@ export default class SearchForm {
         this.section = section;
         this.error = error;
         this.form
-            .querySelector('.search__submit')
-            .addEventListener('click', this.callApi.bind(this));
+            .addEventListener('submit', this.callApi.bind(this));       
     }
     
     callApi() {
@@ -28,5 +27,6 @@ export default class SearchForm {
                     dataStorage.uploadData(res.articles);
                     newsCardList.addListCard(JSON.parse(localStorage.newsArray));
                 })
+            .catch(err => console.log(err))
     }
 }

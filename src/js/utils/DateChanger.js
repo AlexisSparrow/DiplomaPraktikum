@@ -1,6 +1,34 @@
 export default class DateChanger {
-    constructor(date) {
+    constructor(date, weekDay) {
         this.date = date
+        this.weekDay = weekDay;
+    }
+
+    weekDayChecker(day) {
+        switch(day) {
+            case '0':
+                return 'вс'
+                break;
+            case '1':
+                return 'пн'
+                break;
+            case '2':
+                return 'вт'
+                break;
+            case '3':
+                return 'ср'
+                break;
+            case '4':
+                return 'чт'
+                break;
+            case '5':
+                return 'пт'
+                break;
+            case '6':
+                return 'сб'
+                break;
+        }
+
     }
 
     monthChecker(month) {
@@ -77,8 +105,6 @@ export default class DateChanger {
                     secondType:'декабрь'
                 }
                 break;
-            default:
-                console.log('переменная месяца невалидна')
         }
 
     }
@@ -98,10 +124,14 @@ export default class DateChanger {
         const yearFormated = splittedDate.slice(0,4).join('').toString();
         const dayArr = splittedDate.slice(8,10);
         const dayFormated = this.dayChecker(dayArr);
+
+        const weekDayFormated = this.weekDayChecker(this.weekDay);
+
         return {
             dayFormated:dayFormated,
             monthFormated:monthFormated,
-            yearFormated:yearFormated
+            yearFormated:yearFormated,
+            weekDayFormated:weekDayFormated
         }
     }
 }

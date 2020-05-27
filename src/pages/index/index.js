@@ -11,7 +11,7 @@ const newsApi = new NewsApi({
     baseUrl: 
         'https://newsapi.org/v2/everything?',
     date: 
-        new Date(new Date() - 604800000).toISOString(),
+        new Date(new Date() - 86400000 * 6).toISOString(),
     proxy:
         'https://cors-anywhere.herokuapp.com/'
     }, 
