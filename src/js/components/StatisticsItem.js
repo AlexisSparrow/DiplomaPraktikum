@@ -23,8 +23,12 @@ export default class StatisticsItem {
         analytItem.insertAdjacentHTML('afterBegin', template);
 
         const analytGraph = analytItem.querySelector('.analytics__graph')
-        analytGraph.setAttribute('style', `width: calc(${this.numberOfNews}*12*100%/1440 + 15px)`)
-        
+
+        if (this.numberOfNews > 0) {
+        analytGraph.setAttribute('style', `width: calc(${this.numberOfNews}*12*100%/1440 + 15px)`);
+        } else {
+            analytGraph.setAttribute('style', `display: none `);
+        }
 
         return analytItem;
     }

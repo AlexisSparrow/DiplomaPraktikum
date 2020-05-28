@@ -1,7 +1,7 @@
 import './about.css';
 import CommitCardList from '../../js/components/CommitCardList';
 import GitHubApi from '../../js/modules/GitHubApi';
-import {swiperOptions} from '../../js/utils/swiperOptions';
+import {swiperOptions} from '../../js/constants/swiperOptions';
 
 const gitHubApi = new GitHubApi({
     baseUrl: 
