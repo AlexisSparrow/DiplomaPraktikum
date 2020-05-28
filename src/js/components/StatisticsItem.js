@@ -9,11 +9,11 @@ export default class StatisticsItem {
         const analytItem = document.createElement('div');
         analytItem.classList.add('analytics__item');
 
-        const dateChanger = new DateChanger(this.date.toISOString(), this.date.getDay().toString());
+        const dateChanger = new DateChanger();
 
-        const dateObj = dateChanger.dateFormation();
+        const weekDayFormated = dateChanger.weekDayChecker(this.date.getDay().toString());
 
-        const dateFormated = dateObj.dayFormated + ', ' + dateObj.weekDayFormated
+        const dateFormated = this.date.getDate() + ', ' + weekDayFormated;
 
         const template = `<p class="analytics__item-date">${dateFormated}</p>
         <div class="analytics__graph">

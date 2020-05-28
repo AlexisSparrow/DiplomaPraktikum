@@ -1,7 +1,6 @@
 export default class DateChanger {
-    constructor(date, weekDay) {
+    constructor(date) {
         this.date = date
-        this.weekDay = weekDay;
     }
 
     weekDayChecker(day) {
@@ -125,13 +124,10 @@ export default class DateChanger {
         const dayArr = splittedDate.slice(8,10);
         const dayFormated = this.dayChecker(dayArr);
 
-        const weekDayFormated = this.weekDayChecker(this.weekDay);
-
         return {
             dayFormated:dayFormated,
             monthFormated:monthFormated,
             yearFormated:yearFormated,
-            weekDayFormated:weekDayFormated
         }
     }
 }
