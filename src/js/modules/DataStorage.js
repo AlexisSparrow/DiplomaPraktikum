@@ -10,4 +10,8 @@ export default class DataStorage {
     uploadKeyWord(word) {
         localStorage.keyWord = word 
     }
+
+    uploadCounter(counter) {
+        localStorage.counter = counter;
+    }
 }

@@ -13,9 +13,7 @@ export default class CommitCard {
         commitCard.classList.add('swiper-slide');
 
         const dateChanger = new DateChanger(this.date);
-
         const dateObj = dateChanger.dateFormation();
-
         const dateFormated = dateObj.dayFormated + ' ' + dateObj.monthFormated.firstType + ', ' + dateObj.yearFormated;
 
         const template = 
@@ -30,8 +28,6 @@ export default class CommitCard {
             <p class="swiper-paragraph">${this.text}`;
 
         commitCard.insertAdjacentHTML('afterBegin', template);
-
-        console.log(commitCard);
 
         return commitCard;
     }

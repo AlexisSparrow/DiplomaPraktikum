@@ -13,10 +13,10 @@ export default class Statistics {
         this.container.appendChild(element);
     }
 
-    addListCard(arrLength) {
+    addListCard(newsArrLength) {
         for (let i = 6; i >= 0; i--) {
             const date = new Date(new Date - 86400000 * i)
-            this.addCard(date, arrLength[6-i]);
+            this.addCard(date, newsArrLength[6-i]);
         };
     }
 
@@ -36,9 +36,9 @@ export default class Statistics {
         const monthItem = document.querySelector('.analytics__date');
         monthItem.insertAdjacentHTML('afterbegin', `ДАТА (${dateFormated.monthFormated.secondType.toUpperCase()})`)
 
-        const arrLength = this.dayDivider(this.list)
+        const newsArrLength = this.dayDivider(this.list)
 
-        this.addListCard(arrLength)
+        this.addListCard(newsArrLength)
 
     }
 
@@ -52,25 +52,25 @@ export default class Statistics {
     }
 
     dayDivider(list) {
-        const arr = []
+        const newsArr = []
         for (const element of list) {
             const date = element.publishedAt.slice(8,10)
-            arr.push(date)
+            newsArr.push(date)
         }
-        const arrChecked = []
+        const newsArrChecked = []
         for (let i = 6; i >= 0; i--) {
             const check = new Date(new Date - 86400000 * i).getDate().toString()
-            arrChecked[6 - i] = arr.filter(element => {
+            newsArrChecked[6 - i] = newsArr.filter(element => {
                 if (element == check) {
                     return element
                 }
             })
         }
         
-        const arrLength = arrChecked.map(element => {
+        const newsArrLength = newsArrChecked.map(element => {
             return element.length
         })
 
-        return arrLength
+        return newsArrLength
     }
 }

@@ -7,26 +7,31 @@ export default class SearchForm {
         this.search = search;
         this.section = section;
         this.error = error;
+        this.formInput = this.form.querySelector('.search__input');
         this.form
-            .addEventListener('submit', this.callApi.bind(this));       
+            .addEventListener('submit', this.callApi.bind(this));   
+            
     }
     
     callApi() {
         event.preventDefault();
-        const word = this.form.querySelector('.search__input').value;
-        this.form.querySelector('.search__input').value = '';
+        const keyWord = this.formInput.value;
         this.error.style.display = "none";
         this.root.style.display = "none";
         this.section.style.display = "block";
         this.search.style.display = "flex";
-        newsApi.getNews(word)
+        newsApi.getNews(keyWord)
             .then(res => 
                 {
                     dataStorage.vanishOldData();
-                    dataStorage.uploadKeyWord(word)
+                    dataStorage.uploadKeyWord(keyWord)
                     dataStorage.uploadData(res.articles);
                     newsCardList.addListCard(JSON.parse(localStorage.newsArray));
                 })
             .catch(err => console.log(err))
+    }
+
+    preloadKeyWord(keyWord) {
+        this.formInput.value = keyWord
     }
 }

@@ -15,10 +15,17 @@ const newsApi = new NewsApi({
     }, 
 );
 
-const newsCardList = new NewsCardList(document.querySelector('.cards__container'), document.querySelector('.cards__root'), document.querySelector('.cards__search-container'), document.querySelector('.cards__error-container'), document.querySelector('.cards__button'));
+const newsCardList = new NewsCardList(document.querySelector('.cards__container'), document.querySelector('.cards__root'), document.querySelector('.cards__search-container'), document.querySelector('.cards__error-container'), document.querySelector('.cards__button'), document.querySelector('.cards'));
 
 const searchForm = new SearchForm(document.querySelector('.search__form'), document.querySelector('.cards__root'), document.querySelector('.cards__search-container'), document.querySelector('.cards'), document.querySelector('.cards__error-container'));
 
 const dataStorage = new DataStorage();
 
+if (localStorage.length >= 2) {
+    newsCardList.addListCardFromLocalStorage(JSON.parse(localStorage.newsArray), localStorage.counter)
+    searchForm.preloadKeyWord(localStorage.keyWord)
+}
+
 export {newsApi, newsCardList, dataStorage};
+
+        

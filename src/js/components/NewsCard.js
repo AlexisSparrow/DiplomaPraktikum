@@ -29,23 +29,8 @@ export default class NewsCard {
             </div>`;
 
         card.insertAdjacentHTML('afterBegin', template);
-        
-        //const titleItem = card.querySelector('.cards__item-title');
-        //const paragraphItem = card.querySelector('.cards__item-paragraph');
-        //console.log(window.getComputedStyle(titleItem,null))
-        //console.log(window.getComputedStyle(titleItem,null).getPropertyValue('height'))
-        //if (titleItem.style.height == '60px') {
-        //    paragraphItem.setAttribute('style', 'height: 140px')
-        //}
-
-        console.log(card);
 
         return card
     }
 
-    //widthHandler(titleItem ,paragraphItem) {
-    //    if (titleItem.style.height == '60px') {
-    //        paragraphItem.setAttribute('style', 'height: 140px')
-    //    }
-    //}
 }

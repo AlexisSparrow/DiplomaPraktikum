@@ -2,12 +2,13 @@ import NewsCard from './NewsCard';
 import { dataStorage } from '../../pages/index';
 
 export default class NewsCardList {
-    constructor(container, root, search, error,cardsButton) {
+    constructor(container, root, search, error, cardsButton, section) {
         this.container = container;
         this.root = root;
         this.search = search;
         this.error = error;
         this.cardsButton = cardsButton;
+        this.section = section
         this.cardsButton
             .addEventListener('click', () => this.addPreloadedListCard(JSON.parse(localStorage.newsArray)));
         this.counter = 0;
@@ -32,6 +33,7 @@ export default class NewsCardList {
             this.root.style.display = "block";
             this.cardsButton.style.display = 'none';
             this.counter = 0;
+            dataStorage.uploadCounter(this.counter)
         } else if (listSliced.length > 0) {
             for (const data of listSliced) {
                 this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name, data.url);
@@ -40,6 +42,7 @@ export default class NewsCardList {
             this.search.style.display = "none";
             this.root.style.display = "block";
             this.counter = 0;
+            dataStorage.uploadCounter(this.counter)
         } else {
             this.search.style.display = "none";
             this.error.style.display = "flex";
@@ -53,12 +56,27 @@ export default class NewsCardList {
                 this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name, data.url);
             };
             this.cardsButton.style.display = 'none';
+            this.counter++
+            dataStorage.uploadCounter(this.counter)
         } else if (listSliced.length > 0) {
             for (const data of listSliced) {
                 this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name, data.url);
             };
             this.counter++
+            dataStorage.uploadCounter(this.counter)
         } else {
+            this.cardsButton.style.display = 'none';
+        }
+    }
+
+    addListCardFromLocalStorage(localStorageList, localStorageCounter) {
+        const listSliced = localStorageList.slice(0,3 + localStorageCounter * 3);
+        for (const data of listSliced) {
+            this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name, data.url);
+        };
+        this.root.style.display = "block";
+        this.section.style.display = "block";     
+        if (localStorageList.length == listSliced.length) {
             this.cardsButton.style.display = 'none';
         }
     }
