@@ -23,18 +23,18 @@ export default class Statistics {
     statsUploader() {
         const requestFormated = this.titleFormation(this.keyWord).forRequest;
         const requestItem = document.querySelector('.request__question');
-        requestItem.insertAdjacentHTML('afterbegin', requestFormated)
+        requestItem.textContent = requestFormated;
 
         const titleCounter = this.list.length;
         const titleCounterItem = document.querySelector('#secondRequestSpan')
-        titleCounterItem.insertAdjacentHTML('afterbegin', titleCounter)
+        titleCounterItem.textContent = titleCounter;
 
         const dateChanger = new DateChanger(new Date(new Date - 86400000 * 6).toISOString())
         const dateFormated = dateChanger.dateFormation()
 
 
         const monthItem = document.querySelector('.analytics__date');
-        monthItem.insertAdjacentHTML('afterbegin', `ДАТА (${dateFormated.monthFormated.secondType.toUpperCase()})`)
+        monthItem.textContent = `ДАТА (${dateFormated.monthFormated.secondType.toUpperCase()})`;
 
         const newsArrLength = this.dayDivider(this.list)
 
