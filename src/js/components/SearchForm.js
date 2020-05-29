@@ -23,10 +23,12 @@ export default class SearchForm {
         newsApi.getNews(keyWord)
             .then(res => 
                 {
-                    dataStorage.vanishOldData();
-                    dataStorage.uploadKeyWord(keyWord)
-                    dataStorage.uploadData(res.articles);
-                    newsCardList.addListCard(JSON.parse(localStorage.newsArray));
+                    if (res.articles.length > 0) {
+                        dataStorage.vanishOldData();
+                        dataStorage.uploadKeyWord(keyWord)
+                        dataStorage.uploadData(res.articles);
+                    }
+                    newsCardList.addListCard(res.articles);
                 })
             .catch(err => console.log(err))
     }

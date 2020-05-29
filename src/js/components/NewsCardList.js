@@ -24,7 +24,7 @@ export default class NewsCardList {
         this.container.innerHTML = '';
         this.cardsButton.style.display = 'flex';
         const listSliced = list.slice(0, 3);
-        if (list.length <= 3 || listSliced.length <= 2) {
+        if ((list.length <= 3 & list.length > 0) || (listSliced.length <= 2 & listSliced.length > 0)) {
             for (const data of listSliced) {
                 this.addCard(data.urlToImage, data.publishedAt, data.title, data.description, data.source.name, data.url);
             };

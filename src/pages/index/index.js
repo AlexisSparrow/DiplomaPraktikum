@@ -7,11 +7,9 @@ import DataStorage from '../../js/modules/DataStorage';
 
 const newsApi = new NewsApi({
     baseUrl: 
-        'https://newsapi.org/v2/everything?',
+        'https://praktikum.tk/news/v2/everything?',
     date: 
         new Date(new Date() - 86400000 * 6).toISOString(),
-    proxy:
-        'https://cors-anywhere.herokuapp.com/'
     }, 
 );
 
@@ -21,7 +19,7 @@ const searchForm = new SearchForm(document.querySelector('.search__form'), docum
 
 const dataStorage = new DataStorage();
 
-if (localStorage.length >= 2) {
+if (localStorage.length >= 3) {
     newsCardList.addListCardFromLocalStorage(JSON.parse(localStorage.newsArray), localStorage.counter)
     searchForm.preloadKeyWord(localStorage.keyWord)
 }
