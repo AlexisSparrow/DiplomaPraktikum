@@ -25,7 +25,7 @@ export default class NewsCard {
                 <p class="cards__item-date">${dateFormated}</p>
                 <h2 class="cards__item-title">${this.title}</h2>
                 <p class="cards__item-paragraph">${text}</p>
-                <a class="cards__item-source" href="${this.sourceLink}">${this.source}></a>
+                <a class="cards__item-source" href="${this.sourceLink}">${this.source}</a>
             </div>`;
 
         card.insertAdjacentHTML('afterBegin', template);
