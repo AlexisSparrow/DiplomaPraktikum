@@ -14,7 +14,7 @@ const commitCardList = new CommitCardList(document.querySelector('.swiper-wrappe
 gitHubApi.getCommits()
     .then(res=> {
         commitCardList.addListCard(res);
-        var mySwiper = new Swiper ('.swiper-container' , swiperOptions)
+        var mySwiper = new Swiper('.swiper-container', swiperOptions)
     })
     .catch(err => console.log(err))
 
