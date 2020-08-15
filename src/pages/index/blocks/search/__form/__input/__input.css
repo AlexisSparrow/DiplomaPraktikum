@@ -13,3 +13,7 @@
     background-color: unset;
     outline: none;
 }
+
+.search__input:invalid:not(:placeholder-shown) {
+    
+}
