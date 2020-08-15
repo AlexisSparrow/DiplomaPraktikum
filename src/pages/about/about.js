@@ -1,48 +1,22 @@
-import './about.css'
+import './about.css';
+import CommitCardList from '../../js/components/CommitCardList';
+import GitHubApi from '../../js/modules/GitHubApi';
+import {swiperOptions} from '../../js/constants/swiperOptions';
+
+const gitHubApi = new GitHubApi({
+    baseUrl: 
+        'https://api.github.com/repos/AlexisSparrow/DiplomaPraktikum/commits'
+    }
+);
+
+const commitCardList = new CommitCardList(document.querySelector('.swiper-wrapper'))
+
+gitHubApi.getCommits()
+    .then(res=> {
+        commitCardList.addListCard(res);
+        var mySwiper = new Swiper('.swiper-container', swiperOptions)
+    })
+    .catch(err => console.log(err))
 
 
-var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
 
-    breakpoints: {
-        320: {
-            spaceBetween:8,
-            initialSlide:0,
-            slidesPerView:1,
-            slidesPerGroup: 1,
-        },
-        768: {
-            initialSlide:2,
-            spaceBetween:8,
-            slidesPerView:1,
-            slidesPerGroup: 2,
-        },
-        769: {
-            initialSlide:2,
-            spaceBetween:8,
-            slidesPerView:2,
-            slidesPerGroup: 2,
-        },
-        1024: {
-            spaceBetween: 16,
-            initialSlide:2,
-            slidesPerView:1,
-            slidesPerGroup: 2,
-        }
-        
-    },
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-})

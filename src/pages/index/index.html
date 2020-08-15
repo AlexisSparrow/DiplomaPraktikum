@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>main</title>
-  <link rel="shortcut icon" href="<%=require('./images/shortcut.png').default%>">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+    <link rel="shortcut icon" href="<%=require('./images/shortcut.png').default%>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
 </head>
 <body>
     <div class="root">
@@ -15,10 +15,10 @@
             <p class="header__logo">NewsAnalyser</p>
             <ul class="header__container">
                 <li class="header__content-row">
-                    <a class="header__link header__link_type_activated" href="https://alexissparrow.github.io/DiplomaPraktikum/index.html">Главная</a>
+                    <a class="header__link header__link_type_activated" href="./index.html">Главная</a>
                     <div class="header__stroke"></div>
                 </li>
-                <li class="header__list-link"><a class="header__link" href="https://alexissparrow.github.io/DiplomaPraktikum/about.html">О проекте</a></li>
+                <li class="header__list-link"><a class="header__link" href="./about.html">О проекте</a></li>
             </ul>
         </header>
         <section class="search">
@@ -28,7 +28,7 @@
             </div>
             <form class="search__form">
                 <div class="search__input-rectangle">
-                    <input type="text" class="search__input" placeholder="Введите тему новости">
+                    <input type="text" class="search__input" placeholder="Введите тему новости" pattern="^(\S+\s?)+$" required>
                 </div>
                 <button type="submit" class="search__submit">Искать</button>
             </form>
@@ -36,7 +36,7 @@
         <section class="cards">
             <div class="cards__root">
                 <h2 class="cards__title">Результаты поиска</h2>
-                <a class="cards__link" href="https://alexissparrow.github.io/DiplomaPraktikum/stats.html">Посмотреть аналитику <img class="cards__vector" src="<%=require('./images/vector.svg').default%>" alt="Problem with connection or file"></a>
+                <a class="cards__link" href="./stats.html">Посмотреть аналитику <img class="cards__vector" src="<%=require('./images/vector.svg').default%>" alt="Problem with connection or file"></a>
                 <div class="cards__container">
                 </div>
                 <div class="cards__button">
@@ -65,13 +65,13 @@
         </section>
         <footer class="footer">
             <ul class="footer__linksContainer">
-                <li class="footer__link-list"><a class="footer__link" href="https://alexissparrow.github.io/DiplomaPraktikum/index.html">Главная</a></li>
-                <li class="footer__link-list"><a class="footer__link" href="https://alexissparrow.github.io/DiplomaPraktikum/about.html">О проекте</a></li>
+                <li class="footer__link-list"><a class="footer__link" href="./index.html">Главная</a></li>
+                <li class="footer__link-list"><a class="footer__link" href="./about.html">О проекте</a></li>
                 <li class="footer__link-list"><a class="footer__link" href="https://praktikum.yandex.ru/profile/frontend-developer/">Яндекс.Практикум</a></li>
             </ul>
             <ul class="footer__iconsContainer">
                 <li class="footer__icon-list"><a class="footer__link-icon" href="https://github.com/AlexisSparrow"><img class="footer__icon" src="<%=require('./images/GHV.svg').default%>" alt="Problem with connection or file"></a></li>
-                <li class="footer__icon-list"><a class="footer__link-icon" href="#"><img class="footer__icon" src="<%=require('./images/FBV.svg').default%>" alt="Problem with connection or file"></a></li>
+                <li class="footer__icon-list"><a class="footer__link-icon" href="https://vk.com/alexis_sparrow"><img class="footer__icon" src="<%=require('./images/vk_logo.png').default%>" alt="Problem with connection or file"></a></li>
             </ul>
             <p class="footer__copyright">© 2019  Supersite</p>
         </footer>
